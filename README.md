@@ -58,6 +58,35 @@ cpp
 digitalWrite(inj1, HIGH); // 打开喷油器1
 总结
 在嵌入式系统中，清晰的设计和配置传感器输入引脚、执行器输出引脚、以及通过获取输入、计算控制变量和输出控制信号的流程是至关重要的。这种架构确保了系统能够实时、准确地控制发动机或其他机械系统，从而实现所需的性能和功能。
+
+
+![img.png](img.png)
+
+![img_1.png](img_1.png)
+
+![img_2.png](img_2.png)
+
+
+![img_3.png](img_3.png)
+
+
+![img_4.png](img_4.png)
+
+
+![img_5.png](img_5.png)
+
+![img_6.png](img_6.png)
+
+![img_7.png](img_7.png)
+
+![img_8.png](img_8.png)
+
+![img_9.png](img_9.png)
+
+
+![img_10.png](img_10.png)
+
+![img_11.png](img_11.png)
 # end核心流程
 
 
