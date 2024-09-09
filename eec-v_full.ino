@@ -44,6 +44,7 @@ const byte coilc = 11; // 点火线圈C的引脚编号
 bool coilc_enabled = true; // 点火线圈C是否启用
 byte current_coil = 0; // 当前使用的点火线圈
 
+//引脚 (inj1, inj2, inj3, inj4, inj5, inj6) 是用于控制喷油器的执行器引脚。它们通常连接到喷油器驱动电路，控制喷油器的开启和关闭，从而实现燃油喷射。
 // 喷油器输出设置
 const byte inj1 = 5; // 喷油器1的引脚编号
 const byte inj2 = 6; // 喷油器2的引脚编号
