@@ -274,7 +274,7 @@ int ignition_table[11][11] = {
   {12, 12, 13, 13, 14, 14, 15, 15, 16, 16, 17}
 };
 
-// 曲轴中断处理函数
+// 曲轴中断处理函数 中断：比定时器安全
 void crank_interrupt() {
   // 如果是第一次检测到曲轴信号
   if (last_crank_time == 0 && last_crank_duration == 0) {
@@ -500,7 +500,7 @@ void loop() {
     send_serial();
   }
 
-  // 如果信号同步成功，调用do_coils_and_inj()函数控制点火线圈和喷油器
+  // 如果信号同步成功，调用do_coils_and_inj()函数控制点火线圈和喷油器。 先由中断函数控制状态，在由set_times计算喷油点火时间
   if (signal_sync) {
     do_coils_and_inj(micros());
   }
